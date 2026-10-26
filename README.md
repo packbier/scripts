@@ -26,6 +26,12 @@ If you plan to delete repositories, grant the deletion scope:
 gh auth refresh -h github.com -s delete_repo
 ```
 
+If you plan to delete organizations, grant the organization administration scope:
+
+```bash
+gh auth refresh -h github.com -s admin:org
+```
+
 ---
 
 ## Usage
@@ -36,6 +42,8 @@ gh auth refresh -h github.com -s delete_repo
 | --- | --- |
 | `bulk-private-repos.sh` | Pick public repos with `fzf`, set them to private. |
 | `bulk-delete-repos.sh` | Pick repos with `fzf`, delete them. |
+| `leave-delete-orgs.sh` | Leave organizations, or delete organizations you own. |
+| `org-profile-visibility.sh` | Show or hide organization memberships on your profile. |
 
 ### /misc
 
